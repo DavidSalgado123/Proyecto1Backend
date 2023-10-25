@@ -3,16 +3,16 @@ import {Router} from 'express';
 const router = Router();
 
 // Endpoint GET /prueba
-router.get('/', getUsuario );
+router.get('/usuarios', getUsuario );
 
 // Endpoint POST /prueba
-router.post('/', createUsuario );
+router.post('/usuarios', createUsuario );
 
 
 // Endpoint PATCH /prueba
-router.patch('/', patchUsuario );
+router.patch('/usuarios/:id', patchUsuario );
 
 // Endpoint DELETE /prueba
-router.delete('/', deleteUsuario );
+router.delete('/usuarios/:id', deleteUsuario );
 
 export default router;
